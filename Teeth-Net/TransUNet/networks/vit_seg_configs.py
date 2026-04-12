@@ -4,7 +4,6 @@ import ml_collections
 def get_b8_config():
     """Returns the ViT-B/8 configuration."""
     config = ml_collections.ConfigDict()
-    # 关键：patch 从 (16,16) 改为 (8,8)
     config.patches = ml_collections.ConfigDict({'size': (8, 8)})
 
     config.hidden_size = 768
@@ -17,14 +16,10 @@ def get_b8_config():
 
     config.classifier = 'seg'
     config.representation_size = None
-
-    # 纯 ViT，不用 ResNet 混合
     config.resnet_pretrained_path = None
 
-    # 关键：换成 B/8 的权重
     config.pretrained_path = '../model/vit_checkpoint/imagenet21k/ViT-B_8.npz'
 
-    # 某些实现既读 patches.size 也读 patch_size，两处都设为 8 以防不一致
     config.patch_size = 8
 
     config.decoder_channels = (256, 128, 64, 16)
