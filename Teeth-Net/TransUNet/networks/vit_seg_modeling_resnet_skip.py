@@ -189,7 +189,7 @@ class PreActBottleneck(nn.Module):
         gn3_bias = np2th(weights[pjoin(n_block, n_unit, "gn3/bias")])
 
         self.conv1.weight.copy_(conv1_weight)
-        # conv2 已由 CFFM 替换，无法直接加载原始单个 3x3 卷积参数
+
         self.conv3.weight.copy_(conv3_weight)
 
         self.gn1.weight.copy_(gn1_weight.view(-1))
