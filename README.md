@@ -8,4 +8,6 @@
 <img width="2280" height="1152" alt="fui_196" src="https://github.com/user-attachments/assets/245b40b6-b0bb-4bd0-86fd-3a1c530279e7" />
 <img width="2112" height="1068" alt="image" src="https://github.com/user-attachments/assets/9e8fe6ce-51b2-4389-af3a-67292b05de8b" />
 4. 阻生齿（Impacted Tooth, IT）是指由于萌出空间不足、萌出方向异常或邻近组织阻挡而未能正常萌出的牙齿。在口腔全景片中，通常表现为牙体埋伏于颌骨内、倾斜萌出、水平阻生或与邻牙位置关系异常。例如，下图中第三磨牙呈水平位或近中倾斜位阻生，且未能正常萌出，则视为阻生齿。标注时，采用 Labelme 软件创建多边形，沿阻生齿牙冠及牙根的可见轮廓进行整体勾画，以完整覆盖阻生牙区域；若部分边界与周围骨质重叠，则以牙体可辨识外缘为主要标注依据。
+<img width="1960" height="1152" alt="imt_446" src="https://github.com/user-attachments/assets/6fd306ed-60ee-4b0a-9d3e-06fecbada25e" />
+<img width="1970" height="1161" alt="image" src="https://github.com/user-attachments/assets/42223db0-ce03-42f4-bf0c-77ac5db9ed67" />
 
